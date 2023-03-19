@@ -1,0 +1,6 @@
+# Exercise 2
+In this exercise I used Unity to create a simple game where the player must use the left and right arrow keys to control a net and catch fish falling from the top of the screen.
+
+The player also has to avoid catching bombs, if they catch one the game is over. 
+
+To create this game I began by splitting the provided sprites, of the fish, bomb, net, and ground, into 4 separate images using GIMP. I then created a Unity 2D project and added the sprites to the project's Assets folder. I created the layout of the game by dragging sprites into the game window, and changed the camera aspect ratio to make it easier to see objects falling from the top of the screen. I added collision shapes to the net, fish, bomb, and ground, then added Rigidbody physics to the fish and bomb so that they would fall in a realistic way. I then added scripts to the net, fish, and bomb, which handle the player controls and handle collisions between different objects. I used an empty GameObject with a script called GameManager to control the overarching game, defining what happens when the player catches a bomb and the game ends. I also added text to show the player's score and a game over message.
